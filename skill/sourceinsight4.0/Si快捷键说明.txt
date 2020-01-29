@@ -1,0 +1,45 @@
+﻿【分配原则】
+1、alt 键靠右，所以动作里含“右”则有alt；另外symbol window也在si的左侧，所以Ctrl+shift+L
+2、相似功能，只是幅度不同，则加shift，最难最冷僻则键最多
+3、bookmark，ctrl + m后，不输入mark也就是active此窗口，所以共用一个键
+4、active某个窗口后，再次active其他窗口，则需要先按esc（返回主窗口）。
+5、有相反意思的动作，加shift。alt：配合性的，无明显意义的；shift：相反，较与alt结合更常用
+6、与win常用快捷键一致，alt系列不能与si菜单栏冲突
+7、key list中“+”指的是数字键盘中的符号，如果要设置成最上行一排的，应该是“=”
+
+【键补充说明】
+Ctrl+P			粘贴（用于crtl+k后）
+
+Ctrl+Shift+I	在下面新建一空行（光标切换到下面的空行。光标在行中，欲新开一行时，不必移到末尾再回车！）
+
+Ctrl+Enter		在下面插入一空行（光标不动。键入{}之后可以使用）；或者对于if(){风格的代码，在{前按下后，
+				可以
+
+Alt+D			Restore Lines，恢复本行内容
+
+Ctrl+;			行尾(可用于移到末尾并添加分号，从而快速结束一行）
+
+Alt+]			匹配当前{[()]}处的另一半
+Ctrl+Shift+[ ]	匹配局部最外层{[()]}等
+			
+Alt+Down		下移屏幕，光标不动
+Alt+Up			上移屏幕，光标不动
+
+Symbol: Symbol Info...                    :  Alt+=, Ctrl+R Click (select)，弹出函数、变量定义小窗口
+
+Ctrl+Shift+.	Go To Next Change，转到下一个修改
+
+Ctrl+shift+h			Smart Rename，智能重命名所有引用处。
+
+Search: Search Backward                   :  F3，以上次选中字符，直接向上搜索
+Search: Search Backward for Selection     :  Shift+F3，以当前选中字符，直接向上搜索
+Search: Search Forward                    :  F4，以上次选中字符，直接向下搜索
+Search: Search Forward for Selection      :  Shift+F4，以当前选中字符，直接直接向下搜索
+
+Navigation: Go To Previous Link           :  Shift+F8，对于在project中搜索。
+Navigation: Go To Next Link               :  Shift+F9，对于在project中搜索。
+
+Alt+W			浏览文件列表（直接输入文件前面对应的数字字母即可跳转）Pick Window...
+
+Ctrl+Shift+Space	刷新屏幕（如屏幕出现诡异显示）,Redraw Screen
+

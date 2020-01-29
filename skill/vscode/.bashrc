@@ -1,0 +1,31 @@
+alias ,='cd -'; 
+alias .='cd ..'; 
+alias ..='cd ../..'; 
+alias ...='cd ../../..'; 
+alias ....='cd ../../../..';   
+alias l='ls -alF'; 
+alias la='ls -la'; 
+alias ll='ls -al --color=tty'; 
+alias lx='ls -lhBX --color=auto'; 
+alias lz='ls -lhrS --color=auto'; 
+alias lt='ls -lhrt --color=auto';  
+alias egrep='egrep --color=auto'; 
+alias fgrep='fgrep --color=auto'; 
+alias grep='grep --color=auto';   
+alias ifa='ifconfig'; 
+alias if1='ifconfig eth1'; 
+alias mk='make -j16'; 
+alias mc='make clean';
+
+#git
+alias gc='git commit -a -m';
+alias gcam='git commit --amend -a -m';
+alias gcamc='git commit --amend -a -C HEAD';
+alias gc.='git commit -a -m "."';
+alias gst='git status';
+alias gps='git push';
+alias gpl='git pull';
+alias gck='git checkout';
+alias gad='git add -A';
+alias gl='git log --pretty=format:"%cd    ---   %s  %C(auto)" -30 --date=format:%c';
+alias gl5='git log --pretty=format:"%cd    ---   %s  %C(auto)" -30 --date=format:%c -5';
