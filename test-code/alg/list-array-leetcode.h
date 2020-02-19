@@ -191,7 +191,7 @@ class s221_no_head_node
 
 //中间某一部分转180度
 class s222
-{
+{ 
 	public:
 		Node *reverseBetween(Node *h, int m, int n)
 		{
@@ -208,13 +208,14 @@ class s222
 				pre = pre->nex;
 
 			Node *cur = pre->nex;			//指向m(第m个)
-			Node *nex = cur->nex;	//指向m+1
 			for(; i < n; ++i)
 			{
-				cur->nex = nex->nex;
-				nex->nex = pre->nex;
-				pre->nex = nex;
-				nex = cur->nex;
+				Node *tmp = cur->nex;	//指向m+1
+
+				cur->nex = tmp->nex;
+				tmp->nex = pre->nex;
+				pre->nex = tmp;
+
 			}
 			return dum.nex;
 		}
@@ -255,19 +256,6 @@ class s224
 	public:
 		Node *rmDuplicate(Node *h)//test中传入的参数是h->nex
 		{
-			if(!h)
-				return nullptr;	
-			
-			Node *head = h, *tmp;
-			for(; h->nex; h = h->nex)
-			{
-				if(h->val == h->nex->val)
-				{
-					tmp = h->nex;
-					h->nex = h->nex->nex;
-					delete tmp;
-				}
-			}
 			return head;
 		}
 };

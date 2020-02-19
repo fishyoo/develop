@@ -18,7 +18,7 @@ typedef struct node
 
 Node *create()
 {
-	Node *p = malloc(sizeof(*p));
+	Node *p = new Node;
 
 	if(!p)return NULL;
 
@@ -47,7 +47,7 @@ Node *ins(Node *H, DType val)
 	if(!H)
 		return NULL;
 
-	Node *p = malloc(sizeof(*p));//要在堆里申请内存
+	Node *p = new Node;//要在堆里申请内存
 	
 	if(!p)
 		return NULL;
@@ -73,7 +73,7 @@ void del(Node *H, DType val)
 			tmp = H->nex;
 			H->nex = H->nex->nex;
 			free(tmp);
-			tmp = NULL			//置NULL，以防外边其他地方有记录此地址，还会用到
+			tmp = NULL;			//置NULL，以防外边其他地方有记录此地址，还会用到
 		}
 		else
 			H = H->nex;			//只有没有删除时，才跳变H的指向。
@@ -347,7 +347,7 @@ void _test_above_all()
 	printf("\nfindPrev:%d\n",  findRes->val);
 	display(pHead, printInt);
 
-	printf("\ins:%d\n",  6);
+	printf("\nins:%d\n",  6);
 //	ins(pHead->nex, 6);
 	ins(pHead, 6);
 	ins(pHead, 6);
