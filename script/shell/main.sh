@@ -12,7 +12,7 @@ command < file	将输入重定向到 file。
 command >> file	将输出以追加的方式重定向到 file。
 
 local：
-一般用于局部变量声明一般用于局部变量声明,多在在函数内部使用。shell脚本中定义的变量是global的,其作用域从被定义的地方开始
+一般用于局部变量声明,多在在函数内部使用。shell脚本中定义的变量是global的,其作用域从被定义的地方开始
 !
 
 function varf()
@@ -203,6 +203,7 @@ mycat()
 		echo $line
 	done << $1
 }
+
 
 test()
 {
